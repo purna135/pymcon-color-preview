@@ -4,22 +4,22 @@
     border: 0;
     outline: 0;
     text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 }
 
 :root {
-    --color-primary: #1d7996;
+    --color-primary: #333333;
     --color-success: #00bf8e;
     --color-warning: #f7c94b;
     --color-danger: #23929E;
     --color-danger-variant: rgba(247, 88, 66, 0.4);
     --color-white: #FFFFFF;
     --color-light: rgba(255, 255, 255, 0.7);
-    --color-dark: #333;
-    --color-black: #000;
+    --color-black: #333333;
     --color-bg: #0F3B49;
-    --color-bg1:  #12495a;
-    --color-bg2: #18637a;
+    --color-bg1:  #0F3B49;
+    --color-bg2: #FFFFFF;
 
     --container-width-lg: 80%;
     --container-width-md: 90%;
@@ -115,7 +115,7 @@ img {
 }
 
 .btn-primary {
-    background:  var(--color-danger);
+    background: var(--color-danger);
     color: var(--color-white);
 }
 
@@ -155,7 +155,7 @@ img {
 
 /* Change navbar style on scroll using javascript */
 .window-scroll {
-    background: var(--color-bg1);
+    background: var(--color-primary);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
@@ -170,11 +170,11 @@ img {
     display: none;
 }
 
-.pymcon__logo {
-    width: 250px;
+.nav__logo {
+    width: 25%;
 }
 
-.pymcon__logo>a:focus-visible img {
+.nav__logo:focus-within img {
     outline: 2px solid var(--color-white);
     border-radius: 5px;
 }
@@ -192,7 +192,7 @@ img {
 }
 
 .nav__menu a:hover {
-    color: var(--color-danger);
+    color: var(--color-bg2);
 }
 
 
@@ -218,13 +218,13 @@ img {
 /* ======================== FOOTER ====================== */
 .footer {
     background: var(--color-bg1);
+    padding-top: 5rem;
     font-size: 0.9rem;
 }
 
 .footer__container {
-    padding-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
 }
 
@@ -233,11 +233,11 @@ img {
 }
 
 .footer__1 p {
-    margin: 1rem 0 2rem;
+    margin: 0 0 2rem;
 }
 
-.footer__logo {
-    width: 65%;
+.footer ul li {
+    margin-bottom: 0.7rem;
 }
 
 .footer ul li a:hover {
@@ -251,15 +251,9 @@ img {
     margin-top: 2rem;
 }
 
-.footer__socials li a:hover {
-    color: var(--color-bg1);
-    border-radius: 15%;
-    background: var(--color-white);
-}
-
 .footer__copyright {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 4rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
 }
@@ -307,7 +301,7 @@ img {
         display: none;
     }
 
-    .pymcon__logo {
+    .nav__logo {
         width: 30%;
     }
 
@@ -396,7 +390,7 @@ img {
 
     /* ======================= FOOTER ======================== */
     .footer__container {
-        gap: 3rem;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -411,7 +405,7 @@ img {
 
 
     /* ======================= NAVBAR ======================== */
-    .pymcon__logo {
+    .nav__logo {
         width: 60%;
     }
 
@@ -444,10 +438,6 @@ img {
         margin-bottom: 1.3rem;
     }
 
-    .footer__logo {
-        margin: 0 auto;
-        width: 50%;
-    }
 
     .footer__1 p {
         margin: 1rem auto;

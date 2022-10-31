@@ -172,8 +172,7 @@
     padding: 2rem;
     border-radius: 2rem;
     transition: var(--transition);
-    color: var(--color-white);
-
+    color: var(--color-primary);
 }
 
 .goal:hover {
@@ -181,12 +180,8 @@
     z-index: 1;
 }
 
-.goal:nth-child(1) .goal__icon {
-    background: #f88d68;
-}
-
 .goal:nth-child(2) .goal__icon {
-    background: #688bf8;
+    background: var(--color-danger);
 }
 
 .goal:nth-child(3) .goal__icon {
@@ -199,13 +194,12 @@
 
 .goal__icon {
     background: var(--color-primary);
-    font-size: 1.5rem;
-    padding: 0.4rem;
+    padding: 0.7rem;
     border-radius: 0.9rem;
 }
 
 .goal h5 {
-    margin: 1.5rem 0 1rem;
+    margin: 2rem 0 1rem;
 }
 
 .goal p {
@@ -253,12 +247,86 @@
 }
 
 
-/* ======================== SPONSORS ====================== */
-.sponsors {
+/* ======================== TEAM ====================== */
+.team {
     background: var(--color-bg1);
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
+.team > a {
+    margin-top: 2rem;
+}
+
+.team__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team__member {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team__member:hover,
+.team__member:focus-within {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.team__member-image img {
+    filter: saturate(0);
+    transition: var(--transition);
+}
+
+.team__member:focus-within img,
+.team__member:hover img {
+    filter: saturate(1);
+    transform: scale(1.1);
+}
+
+.team__member-info * {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.team__member-info p {
+    color: var(--color-light);
+}
+
+.team__member-socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.team__member:hover .team__member-socials {
+    right: 0;
+}
+
+.team__member-socials:focus-within {
+    right: 0;
+    transition: none;
+}
+
+.team__member-socials a {
+    padding: 0.8rem;
+}
+
+
+/* ======================== SPONSORS ====================== */
 .sponsors__container {
     overflow-x: hidden;
     position: relative;
@@ -315,7 +383,6 @@
     z-index: 1;
     border: 2px solid;
     border-color: var(--color-light);
-    margin-top: 8rem;
 }
 
 .subscribe__container:hover {
@@ -324,10 +391,6 @@
 
 .subscribe__text p {
     margin-top: 1rem;
-}
-
-.subscribe__text h1 {
-    font-size: 2rem;
 }
 
 .subscribe__btn {
@@ -372,6 +435,19 @@
     /* ============================ KEYNOTE SPEAKERS ============================== */
     .speakers {
         margin-top: 0;
+    }
+
+    /* ================================ TEAM =================== */
+    .team__container {
+        gap: 1rem;
+    }
+
+    .team__member {
+        padding: 1rem;
+    }
+
+    .team__member-socials a {
+        padding: 0.5rem;
     }
 
 
@@ -438,6 +514,19 @@
         font-size: 0.8rem;
     }
 
+    /* ================================ TEAM =================== */
+    .team__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .team__member {
+        padding: 0.7rem;
+    }
+
+    .team__member-socials a {
+        padding: 0.5rem;
+    }
 
     /* ================================ SPONSORS =================== */
     .sponsor-logo {
