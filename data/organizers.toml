@@ -1,0 +1,66 @@
+title = "Meet Our Organizers"
+description = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat a odio id blanditiis cupiditate totam temporibus"
+
+[[organizer]]
+    name = "Ravin Kumar"
+    designation = "Executive Chair"
+    imgPath = "images/organizers/ravin.jpg"
+    github = "#"
+    twitter = "#"
+    linkedin = "#"
+
+[[organizer]]
+    name = "Thomas Wiecki"
+    designation = "Executive Chair"
+    imgPath = "images/organizers/twiecki.jpg"
+    github = "#"
+    twitter = "#"
+    linkedin = "#"
+
+[[organizer]]
+    name = "Oriol Abril-Pla"
+    designation = "Diversity Chair"
+    imgPath = "images/organizers/oriol.jpg"
+    github = "#"
+    twitter = "#"
+    linkedin = "#"
+
+[[organizer]]
+    name = "Christian"
+    designation = "Tech Committee"
+    imgPath = "images/organizers/christian.jpg"
+    github = "#"
+    twitter = "#"
+    linkedin = "#"
+
+[[organizer]]
+    name = "Sid Ravinutala"
+    designation = "Marketing Chair"
+    imgPath = "images/organizers/sid.jpg"
+    github = "#"
+    twitter = "#"
+    linkedin = "#"
+
+[[organizer]]
+    name = "Hector Muñoz"
+    designation = "Program Chair"
+    imgPath = "images/organizers/hector.jpg"
+    github = "#"
+    twitter = "#"
+    linkedin = "#"
+
+[[organizer]]
+    name = "Quan Nguyen"
+    designation = "Program Chair"
+    imgPath = "images/organizers/quan.jpg"
+    github = "#"
+    twitter = "#"
+    linkedin = "#"
+
+[[organizer]]
+    name = "Chris Krapu"
+    designation = "Program Committee"
+    imgPath = "images/organizers/chris.jpg"
+    github = "#"
+    twitter = "#"
+    linkedin = "#"
